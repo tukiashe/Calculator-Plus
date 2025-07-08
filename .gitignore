@@ -1,34 +1,29 @@
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Alerta de Virus</title>
+<style>
+  body {
+    background-color: black;
+    color: red;
+    font-family: monospace, monospace;
+    text-align: center;
+    padding-top: 100px;
+    animation: blink 1s infinite;
+    user-select: none; /* para que no seleccionen el texto */
+  }
+  @keyframes blink {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px red;
+  }
+</style>
+</head>
+<body>
+  <h1>Se ha detectado un virus, por favor espere unos minutos.</h1>
+</body>
+</html>
